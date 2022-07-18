@@ -73,18 +73,24 @@ nav ul li a{
 .mainButton{
     grid-area: mainButton;
 }
+.mainButton:hover{
+    transform: scale(1.05);
+}
 .mainImg{
     grid-area: mainImg;
     height: 100%;
     width: 100%;
 }
 
+
+
 /* estilos main destacados */
 .sectionDestacados{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:"destacados1"
+    grid-template-areas:"destacadosH2"
+                        "destacados1"
                         "destacados2"
                         "destacados3";
     margin: 1%;
@@ -95,9 +101,20 @@ nav ul li a{
     align-items: center;
 }
 
+.destacadosH2{
+    grid-area: destacadosH2;
+    margin: 5%;
+}
+
 /* animaciones main */
-.destacadosDiv1:hover{
-    transform: scale(1.2);
+.destacados1:hover{
+    transform: scale(1.05);
+}
+.destacados2:hover{
+    transform: scale(1.05);
+}
+.destacados3:hover{
+    transform: scale(1.05);
 }
 
 /* estilos footer */
@@ -119,6 +136,9 @@ footer p{
     background-color: #5E5E5E;
     padding: 0.2rem;
     font-weight: bold;
+}
+.botonSuscrib:hover{
+    transform: scale(1.05);
 }
 
 /* media queries */
@@ -142,10 +162,10 @@ footer p{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "destacados1 destacados2 destacados3";
+        grid-template-areas:"destacadosH2 destacadosH2 destacadosH2" 
+                            "destacados1 destacados2 destacados3";
         justify-content: center;
         justify-items: center;    
         align-items: center;
     }
-
 }
