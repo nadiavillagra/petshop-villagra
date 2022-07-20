@@ -7,7 +7,7 @@
 
 /* estilos generales */
 
-body{
+.container{
     background-color: #bcd;
     font-family: 'Roboto' , sans-serif;
 }
@@ -16,32 +16,26 @@ body{
 header{
     background-color: #3f698d;
 }
+.petshop{
 
-header h1{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 1px 1px #eee;
 }
 
 /* estilos del menu */
-
 nav ul{
     font-size: 1rem;
     list-style: none;
     display: flex;
     justify-content: center;
-    column-gap: 1px;
 }
 nav ul li{
-    margin: 0.3rem;
-    padding: 0.2rem;
-    background-color: #3c5c7c;
-    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #3f698d;
+    border-radius: 0.2rem;
     font-weight: bold;
-    box-shadow: 0.05rem 0.05rem black;
 }
-
+nav ul li{
+}
 nav ul li a{
     color: #eee;
     text-decoration: none;
@@ -82,8 +76,6 @@ nav ul li a{
     width: 100%;
 }
 
-
-
 /* estilos main destacados */
 .sectionDestacados{
     display: grid;
@@ -99,6 +91,7 @@ nav ul li a{
     justify-content: center;
     justify-items: center;    
     align-items: center;
+    text-align: center;
 }
 
 .destacadosH2{
@@ -118,32 +111,71 @@ nav ul li a{
 }
 
 /* estilos footer */
-
 footer{
     background-color: #355C7D;
     text-align: center;
 }
-
 .suscripcion{
     padding: 0.5rem;
 }
-
+.suscripcionP{
+    color: #eee;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 .label{
     padding: 0.2rem;
 }
-
-footer p{
+.derechos{
     background-color: #5E5E5E;
-    padding: 0.2rem;
+    color: #eee;
+    font-size: 0.8rem;
+    padding: 1rem;
     font-weight: bold;
+}
+.botonSuscrib{
+    background-color: #5E5E5E;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
 }
 .botonSuscrib:hover{
     transform: scale(1.05);
 }
 
 /* media queries */
-
 @media screen and (min-width:600px){
+    .sectionMain{
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "mainH2 mainP"
+                            "mainH2 mainButton"
+                            "mainImg mainImg";
+    }
+    .suscripcion{
+            padding: 0.5rem;
+    }
+    .label{
+            padding: 0.2rem;
+    }
+
+    .sectionDestacados{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"destacadosH2 destacadosH2 destacadosH2" 
+                            "destacados1 destacados2 destacados3";
+        justify-content: center;
+        justify-items: center;    
+        align-items: center;
+    }
+    .destacados1 .destacados2 .destacados3{
+        margin: 1rem;
+        padding: 1rem;
+    }   
+}
+
+@media screen and (min-width:1024px){
     .sectionMain{
         display: grid;
         grid-template-columns: 4fr 5fr;

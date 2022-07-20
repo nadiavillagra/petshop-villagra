@@ -11,36 +11,40 @@
     <title>Inicio</title>
 </head>
 <body>
-    <!--h1+nav-->
-    <header>
-        <h1>Petshop</h1>
-        <nav class="menu">
-            <ul>
-                <li> <a href="index.html">Inicio</a></li>
-                <li><a href="pages/destacados.html">Destacados</a></li>
-                <li><a href="pages/catalogo.html">Catalogo</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="sectionIni">
-            <h2 class="mainH2">¡Bienvenidos!</h2>
-            <p class="mainP">¡Es un placer tenerte aqui!</p>
-            <button class="mainButton">OFERTAS</button>
-            <img class="mainImg" src="img/pet-accessories-still-life-concept-with-colorful-objects.jpg" alt="comedero con croquetas y huesitos">
-        </section>
-    </main>
-    <footer>
-        <section class="suscripcion">
-        <h3>Suscríbete para más novedades</h3>
-            <div class="label"> 
-                <label for="nombre"></label>
-                <input type="text" name="nombre" placeholder="Ingresá tu correo electronico">
-                <input class="botonSuscrib" type="submit" value="Suscribirme">
-            </div>
-        </section>
-        <p> Todos los derechos reservados </p>
+    <div class="container">
+        <header>
+            <h1> <img class="petshop" src="img/Logo.png" alt="PetShop"> </h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/destacados.html">Destacados</a></li>
+                    <li><a href="pages/catalogo.html">Catalogo</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="sectionIni">
+                <h2 class="mainH2">¡Bienvenidos!</h2>
+                <p class="mainP">¡Es un placer tenerte aqui!</p>
+                <button class="mainButton">OFERTAS</button>
+                <img class="mainImg" src="img/pet-accessories-still-life-concept-with-colorful-objects.jpg" alt="comedero con croquetas y huesitos">
+            </section>
+        </main>
+
+        <footer>
+            <section class="suscripcion">
+            <p class="suscripcionP">Suscríbete para más novedades</p>
+                <div class="label"> 
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" placeholder="Ingresá tu correo electronico">
+                    <input class="botonSuscrib" type="submit" value="Suscribirme">
+                </div>
+            </section>
+            <p class="derechos"> Todos los derechos reservados </p>
+        </footer>
+    </div>
 </body>
 </html> 
