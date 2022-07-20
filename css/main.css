@@ -28,8 +28,8 @@ nav ul{
     justify-content: center;
 }
 nav ul li{
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     background-color: #3f698d;
     border-radius: 0.2rem;
     font-weight: bold;
