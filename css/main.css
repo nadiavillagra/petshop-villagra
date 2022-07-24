@@ -1,7 +1,7 @@
 /* estilos generales */
 
 .container{
-    background-color: #bcd;
+    background-color: #eee;
     font-family: 'Roboto' , sans-serif;
 }
 
@@ -9,22 +9,25 @@
 header{
     background-color: #3f698d;
 }
+.logo{
+    width: 7rem;
+    height: auto;
+}
 
 /* estilos del menu */
+.menu{
+    justify-items: end;
+    background-color: #3f698d;
+}
 nav ul{
     font-size: 1rem;
     list-style: none;
-    display: flex;
-    justify-content: right;
 }
 nav ul li{
     margin: 0.5rem;
     padding: 0.5rem;
-    background-color: #3f698d;
-    border-radius: 0.2rem;
     font-weight: bold;
-    display: flex;
-    justify-content: right;
+
 }
 nav ul li a{
     color: #eee;
@@ -32,39 +35,42 @@ nav ul li a{
 }
 
 /* estilos de main Inicio*/
-.sectionIni{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: "mainH2 mainP"
-                        "mainH2 mainButton"
-                        "mainImg mainImg";
-    justify-content: center;
-    justify-items: center;    
-    align-items: center;
+main{
+    position: relative;
+}
+.mainImg{
+    height: 100%;
+    width: 100%;
+}
 
-}
-.mainH2{
-    grid-area: mainH2;
-    font-size: 2.3rem;
-    text-align: center;
-}
-.mainP{
-    grid-area: mainP;
-    font-size: 1rem;
-    font-weight: bolder;
+
+.mainH1{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 2rem;
+    background: #eee;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+/*     border-radius: 1rem;
+    display: flex;
+    justify-content: right;
+    align-content: right;
+    vertical-align: middle; */
 }
 .mainButton{
-    grid-area: mainButton;
+    background-color: #355C7D;
+    position: relative;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: #eee;
+    padding: 0.5rem;
 }
 .mainButton:hover{
     transform: scale(1.05);
 }
-.mainImg{
-    grid-area: mainImg;
-    height: 100%;
-    width: 100%;
-}
+
 
 /* estilos main destacados */
 .sectionDestacados{
