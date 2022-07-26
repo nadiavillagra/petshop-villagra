@@ -10,14 +10,14 @@ header{
     background-color: #3f698d;
 }
 .logo{
-    width: 7rem;
-    height: auto;
+    width: 6rem;
+    height: 6rem;
 }
 
 /* estilos del menu */
 .menu{
-    justify-items: end;
-    background-color: #3f698d;
+    display: flex;
+    justify-content: right;
 }
 nav ul{
     font-size: 1rem;
@@ -33,44 +33,18 @@ nav ul li a{
     color: #eee;
     text-decoration: none;
 }
-
-/* estilos de main Inicio*/
-main{
-    position: relative;
-}
-.mainImg{
-    height: 100%;
-    width: 100%;
-}
-
-
-.mainH1{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    font-size: 2rem;
-    background: #eee;
-    bottom: 20px;
-    right: 20px;
-    padding-left: 10px;
-    padding-right: 20px;
-/*     border-radius: 1rem;
-    display: flex;
-    justify-content: right;
-    align-content: right;
-    vertical-align: middle; */
-}
-.mainButton{
-    background-color: #355C7D;
-    position: relative;
-    font-size: 2rem;
-    border-radius: 0.5rem;
-    color: #eee;
+/* estilos de main */
+.sectionBox{
+    background-color: #eee;
+    margin: 0.2rem;
     padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 80%;
 }
-.mainButton:hover{
-    transform: scale(1.05);
+.carouselDiv{
+    display: flex;
+    justify-content: center;
 }
-
 
 /* estilos main destacados */
 .sectionDestacados{
@@ -129,9 +103,13 @@ footer{
     padding: 1rem;
     font-weight: bold;
 }
+.espacio{
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
 .botonSuscrib{
     background-color: #5E5E5E;
-    padding: 0.4rem;
+    padding: 0.2rem;
     border-radius: 0.5rem;
 }
 .botonSuscrib:hover{
@@ -140,21 +118,6 @@ footer{
 
 /* media queries */
 @media screen and (min-width:600px){
-    .sectionMain{
-        display: grid;
-        grid-template-columns: 4fr 5fr;
-        grid-template-rows: 2fr 1fr;
-        grid-template-areas: "mainH2 mainP"
-                            "mainH2 mainButton"
-                            "mainImg mainImg";
-    }
-    .suscripcion{
-            padding: 0.5rem;
-    }
-    .label{
-            padding: 0.2rem;
-    }
-
     .sectionDestacados{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -172,20 +135,6 @@ footer{
 }
 
 @media screen and (min-width:1024px){
-    .sectionMain{
-        display: grid;
-        grid-template-columns: 4fr 5fr;
-        grid-template-rows: 2fr 1fr;
-        grid-template-areas: "mainH2 mainP"
-                            "mainH2 mainButton"
-                            "mainImg mainImg";
-    }
-    .suscripcion{
-            padding: 0.5rem;
-    }
-    .label{
-            padding: 0.2rem;
-    }
     .sectionDestacados{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
