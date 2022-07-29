@@ -1,0 +1,38 @@
+// linea de comentario
+/* comentario en sass y css*/
+
+//nesting
+header{
+    background-color: #3f698d;
+    .logo{
+        width: 6rem;
+        height: 6rem;
+    }
+    .menu{
+        font-weight: bold;
+        display: flex;
+        justify-content: right;
+        font-size: 1rem;
+        li{
+            margin: 0.5rem;
+            padding: 0.5rem;
+            font-weight: bold;
+            list-style: none;
+            a{
+                color: #eee;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+
+/*estilos de main*/
+.sectionBox{
+    background-color: #eee;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
